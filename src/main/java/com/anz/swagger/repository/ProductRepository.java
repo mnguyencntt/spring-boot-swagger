@@ -1,0 +1,9 @@
+package com.anz.swagger.repository;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+import com.anz.swagger.domain.Product;
+
+@RepositoryRestResource
+public interface ProductRepository extends CrudRepository<Product, Integer> {
+}
