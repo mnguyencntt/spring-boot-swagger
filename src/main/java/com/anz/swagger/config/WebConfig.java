@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class WebConfig {
+  @SuppressWarnings({"rawtypes", "unchecked"})
   @Bean
   ServletRegistrationBean h2servletRegistration() {
     ServletRegistrationBean registrationBean = new ServletRegistrationBean(new WebServlet());
